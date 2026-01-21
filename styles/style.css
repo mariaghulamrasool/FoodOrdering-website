@@ -80,7 +80,7 @@ section{
 }
 
 .hero_section{
-    background-image: url(/images/home_hero-section.jpg);
+    background-image: url(./images/home_hero-section.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 91.5vh;
@@ -277,4 +277,5 @@ footer .social_links{
 footer .social_links a{
     padding: 0px 10px;
     color: white;
+
 }
