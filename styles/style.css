@@ -1,0 +1,280 @@
+:root{
+    --primary-red: #E63946; /* Buttons (Order Now), Prices */
+    --fresh-green: #2A9D8F; /* Whatsapp btn */
+    --dark-brown: #4A2C2A; /* Logo, Headings */
+    --soft-cream: #FFF1CC; /* Background sections */
+    --pure-white: #FFFFFF; /* Main background*/
+    --dark-gray: #333333; /* Text content*/
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+body{
+    background-color: var(--pure-white);
+    overflow-x: hidden;
+}
+
+section{
+    background-color: var(--soft-cream);
+    height: 91.5vh;
+    line-height: 1.5em;
+}
+
+.navbar{
+    background-color: #1F1F1F;
+    height: 50px;
+    padding: 0px 100px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* sticky navbar */
+    position: sticky;
+    top: 0;
+}
+
+.navbar .logo, footer .logo{
+    color: var(--pure-white);
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.navbar ul{
+    display: flex;
+    gap: 20px;
+
+    font-size: 18px;
+}
+
+.navbar ul li a{
+    color: #FFFFFF;
+}
+
+.navbar ul li a:hover{
+    color: #E63946;
+}
+
+.navbar ul li a:active{
+    color: #E63946;
+}
+
+.navbar .btn button{
+    background-color: #25D366;
+    padding: 7px 20px;
+    border-radius: 30px;
+    
+    color: white;
+}
+
+.navbar .btn button:hover{
+    cursor: pointer;
+}
+
+.hero_section{
+    background-image: url(/images/home_hero-section.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 91.5vh;
+}
+
+.container{
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+
+    height: 91.5vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: var(--pure-white);
+}
+
+.text{
+  
+    
+
+    
+}
+
+.text h1{
+    font-size: 50px;
+    /* align-self: flex-end; */
+    margin-bottom: 25px;
+}
+
+.text button{
+    margin-top: 20px;
+    background-color: var(--fresh-green);
+    color: var(--pure-white);
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+.text button:hover{
+    cursor: pointer;
+    background-color: rgba(42, 157, 143, 0.8);
+    
+}
+
+
+.section_2{
+    background-color: var(--soft-cream);
+    text-align: center;
+}
+
+.section_2 h1{
+    padding-top: 30px;
+}
+
+.card_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 91.5vh;  
+    gap: 20px;  
+}
+
+.card_container .card{
+    color: var(--dark-brown);
+    padding: 20px;
+    height: 430px;
+    width: 330px;
+}
+ 
+.card_container .card h2{
+    margin-bottom: 8px;
+}
+
+.card_container .card img{
+    width: 280px;
+    height: 200px;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.card button{
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    color: white;
+}
+
+.card_1{
+    background-color: #FFF3B0;
+    
+}
+
+.card_1 button{
+    background-color: #F77F00;
+}
+
+.card_2{
+    background-color: #FFE5D9;
+}
+
+.card_2 button{
+    background-color: #E63946;
+}
+
+.card_3{
+    background-color: #DFF6F0;
+    color: #333333;
+}
+
+.card_3 button{
+    background-color: #2A9D8F;
+}
+
+.section_2 .card_container h1{
+    margin: auto;
+}
+
+.section_3{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: 50px;
+    padding: 80px 150px;
+}
+
+.section_3 li{
+    padding: 5px 0px;
+}
+
+.section_4 h1{
+    text-align: center;
+}
+
+.section_4 .card{
+    height: 350px;
+}
+
+.section_4 .card h3{
+    text-align: center;
+}
+
+.section_5{
+    padding: 80px 150px;
+    display: grid;
+    grid-template-areas: 'text img' 'cta img';
+}
+
+.section_5 .text{
+    grid-area: text;
+}
+
+.section_5 .image{
+    grid-area: img;
+    align-self: flex-start;
+}
+
+.section_5 .cta_section{
+    grid-area: cta;
+}
+
+footer{
+    background-color: #1F1F1F;
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    padding: 20px 100px;
+    color: white;
+}
+
+footer .logo{
+    align-self: center;
+}
+
+footer ul{
+    align-self: center;
+}
+
+footer li{
+    padding: 10px 0px;
+}
+
+footer li a {
+    color: white;
+}
+
+footer .social_links{
+    align-self: center;
+}
+
+footer .social_links a{
+    padding: 0px 10px;
+    color: white;
+}

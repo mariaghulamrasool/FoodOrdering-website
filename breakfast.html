@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakfast</title>
+    <style>
+        *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+        body{
+            line-height: 1.2em;
+            background-color: #FFF1CC;
+        }
+
+        .navbar{
+    background-color: #1F1F1F;
+    height: 50px;
+    padding: 0px 100px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* sticky navbar */
+    position: sticky;
+    top: 0;
+}
+
+.navbar .logo{
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    
+}
+
+.navbar ul{
+    display: flex;
+    gap: 20px;
+
+    font-size: 18px;
+}
+
+.navbar ul li a{
+    color: #FFFFFF;
+}
+
+.navbar ul li a:hover{
+    color: #E63946;
+}
+
+.navbar ul li a:active{
+    color: #E63946;
+}
+
+.navbar .btn button{
+    background-color: #25D366;
+    padding: 7px 20px;
+    border-radius: 30px;
+    
+    color: white;
+}
+
+.navbar .btn button:hover{
+    cursor: pointer;
+}
+
+        h1{
+            text-align: center;
+            padding: 50px 0px;
+        }
+
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            gap: 40px;
+            padding: 20px 150px;
+        }
+
+        .card{
+            background-color: aqua;
+            width: 300px;
+            height: 400px;
+            padding: 20px;
+
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+            border-radius: 20px;
+        }
+
+        .card img{
+            width: 250px;
+            height: 250px;
+        }
+
+        .card span{
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        footer{
+    background-color: #1F1F1F;
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    padding: 20px 100px;
+    color: white;
+}
+
+footer .logo{
+    align-self: center;
+    color: var(--pure-white);
+    font-weight: bold;
+    font-size: 25px;
+}
+
+footer ul{
+    align-self: center;
+}
+
+footer li{
+    padding: 10px 0px;
+}
+
+footer li a {
+    color: white;
+}
+
+footer .social_links{
+    align-self: center;
+}
+
+footer .social_links a{
+    padding: 0px 10px;
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">WhatsMeal.pk</div>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./breakfast.html">Breakfast</a></li>
+            <li><a href="./lunch.html">Lunch</a></li>
+            <li><a href="./snack.html">Snack</a></li>
+        </ul>
+        <div class="btn">
+            <a href=""><button>WhatsApp Order</button></a>
+        </div>
+    </nav>
+    <main>
+        <section>
+            <h1>BreakFast Menu</h1>
+            <div class="container">
+                <div class="card card_1">
+                    <h3 class="food_name">Halwa Puri</h3>
+                    <img src="/images/Breakfast_halwa_puri.jpg" alt="halwa puri">
+                    <p class="food_description">
+                        Soft, fluffy puris served with sweet halwa and spicy chana.
+A classic desi breakfast to start your day right.
+                    </p>
+                    <p class="food_price"> <span>Rs</span> 180</p>
+                </div>
+                <div class="card card_2">
+                    <h3 class="food_name">Plain Paratha</h3>
+                    <img src="/images/breakfast_plain_paratha.jpg" alt="plain paratha">
+                    <p class="food_description">
+                        Freshly cooked, crispy paratha made with pure desi ghee.
+Perfect with chai or curry.
+                    </p>
+                    <p class="food_price"><span>Rs</span> 80</p>
+                </div>
+                <div class="card card_3">
+                    <h3 class="food_name">Paratha + Omelette</h3>
+                    <img src="/images/breakfast_omelete&paratha.jpg" alt="omelete & paratha">
+                    <p class="food_description">
+                        Golden paratha served with a fluffy desi omelette.
+A filling and energetic breakfast combo.
+                    </p>
+                    <p class="food_price"><span>Rs</span> 150</p>
+                </div>
+                <div class="card card_4">
+                    <h3 class="food_name">Anda Bhurji</h3>
+                    <img src="/images/breakfast_anda_bhurji.jpg" alt="anda bhurji">
+                    <p class="food_description">
+                        Scrambled eggs cooked with onions, tomatoes, and masala.
+Best enjoyed with hot paratha.
+                    </p>
+                    <p class="food_price"><span>Rs</span> 130</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="logo">WhatsMeal.pk</div>
+
+        <nav class="nav_links">
+            <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./breakfast.html">Breakfast</a></li>
+            <li><a href="./lunch.html">Lunch</a></li>
+            <li><a href="./snack.html">Snack</a></li>
+        </ul>
+        </nav>
+        
+        <div class="social_links">
+            <a href="">Whatsapp</a>
+            <a href="">Instagram</a>
+            <a href="">Facebook</a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snack</title>
+    <style>
+        *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+        body{
+            background-color: #FFF1CC;
+            line-height: 1.2em;
+        }
+
+        .navbar{
+    background-color: #1F1F1F;
+    height: 50px;
+    padding: 0px 100px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* sticky navbar */
+    position: sticky;
+    top: 0;
+}
+
+.navbar .logo{
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    
+}
+
+.navbar ul{
+    display: flex;
+    gap: 20px;
+
+    font-size: 18px;
+}
+
+.navbar ul li a{
+    color: #FFFFFF;
+}
+
+.navbar ul li a:hover{
+    color: #E63946;
+}
+
+.navbar ul li a:active{
+    color: #E63946;
+}
+
+.navbar .btn button{
+    background-color: #25D366;
+    padding: 7px 20px;
+    border-radius: 30px;
+    
+    color: white;
+}
+
+.navbar .btn button:hover{
+    cursor: pointer;
+}
+
+        h1{
+            text-align: center;
+            padding: 50px 0px;
+        }
+
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            gap: 40px;
+            padding: 20px 150px;
+        }
+
+        .card{
+            background-color: aqua;
+            width: 300px;
+            height: 400px;
+            padding: 20px;
+
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+            border-radius: 20px;
+        }
+
+        .card img{
+            width: 250px;
+            height: 250px;
+        }
+
+        .card span{
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        footer{
+    background-color: #1F1F1F;
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    padding: 20px 100px;
+    color: white;
+}
+
+footer .logo{
+    align-self: center;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+footer ul{
+    align-self: center;
+}
+
+footer li{
+    padding: 10px 0px;
+}
+
+footer li a {
+    color: white;
+}
+
+footer .social_links{
+    align-self: center;
+}
+
+footer .social_links a{
+    padding: 0px 10px;
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">WhatsMeal.pk</div>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./breakfast.html">Breakfast</a></li>
+            <li><a href="./lunch.html">Lunch</a></li>
+            <li><a href="./snack.html">Snack</a></li>
+        </ul>
+        <div class="btn">
+            <a href=""><button>WhatsApp Order</button></a>
+        </div>
+    </nav>
+    <main>
+        <section>
+            <h1>Lunch Menu</h1>
+            <div class="container">
+                <div class="card card_1">
+                    <h3 class="food_name">Chicken Biryani</h3>
+                    <img src="/images/lunch_chicken_biryani.jpg" alt="Chicken Biryani">
+                    <p class="food_description">
+                        Aromatic basmati rice cooked with tender chicken and spices.
+Served hot with raita for the perfect desi taste.
+                    </p>
+                    <p class="food_price"> <span>Rs</span> 250</p>
+                </div>
+                <div class="card card_2">
+                    <h3 class="food_name">Chicken Karahi</h3>
+                    <img src="/images/lunch_chicken_karahi.jpg" alt="Chicken Karahi">
+                    <p class="food_description">
+                        Fresh chicken cooked in rich tomato and ginger masala.
+A bold, spicy dish loved by everyone.
+                    </p>
+                    <p class="food_price"> <span>Rs</span> 300</p>
+                </div>
+                <div class="card card_3">
+                    <h3 class="food_name">Daal Chawal</h3>
+                    <img src="" alt="Daal Chawal">
+                    <p class="food_description">
+                        Comforting lentils cooked to perfection with steamed rice.
+Light, healthy, and satisfying meal.
+                    </p>
+                    <p class="food_price"> <span>Rs</span> 180</p>
+                </div>
+                <div class="card card_4">
+                    <h3 class="food_name">Chicken Korma</h3>
+                    <img src="/images/lunch_chicken_korma.jpg" alt="Chicken Korma">
+                    <p class="food_description">Mild and creamy curry made with traditional spices.
+Perfect for those who enjoy rich flavors.</p>
+                    <p class="food_price"> <span>Rs</span> 280</p>
+                </div>
+                <div class="card card_5">
+                    <h3 class="food_name">Aloo Gosht</h3>
+                    <img src="/images/lunch_aloo_ghosht.jpg" alt="aloo ghost">
+                    <p class="food_description">
+                        Tender meat cooked with potatoes in desi gravy.
+A hearty and filling lunch option.
+                    </p>
+                    <p class="food_price"> <span>Rs</span> 320</p>
+                </div>
+                <div class="card card_6">
+                    <h3 class="food_name">Naan</h3>
+                    <img src="/images/lunch_naan.jpg" alt="naan">
+                    <p class="food_description">Freshly baked bread, soft and warm.
+Best paired with any curry.</p>
+                    <p class="food_price"> <span>Rs</span> 40</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="logo">WhatsMeal.pk</div>
+        
+        <nav class="nav_links">
+            <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./breakfast.html">Breakfast</a></li>
+            <li><a href="./lunch.html">Lunch</a></li>
+            <li><a href="./snack.html">Snack</a></li>
+        </ul>
+        </nav>
+        
+        <div class="social_links">
+            <a href="">Whatsapp</a>
+            <a href="">Instagram</a>
+            <a href="">Facebook</a>
+        </div>
+    </footer>
+</body>
+</html>
